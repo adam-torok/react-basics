@@ -15,7 +15,7 @@ function App() {
       <Header />
       <main>
       	<ConfigureCounter onSetChosenCount={(count) => setChosenCount(count)}/>
-        <Counter initialCount={chosenCount} />
+        <Counter key={chosenCount} initialCount={chosenCount} />
       </main>
     </>
   );
